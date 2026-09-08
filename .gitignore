@@ -1,0 +1,39 @@
+# Python cache
+__pycache__/
+*.py[cod]
+*$py.class
+.pytest_cache/
+.mypy_cache/
+.ipynb_checkpoints/
+
+# Virtual environments
+.venv/
+venv/
+env/
+ENV/
+
+# Local IDE/settings
+.vscode/
+.idea/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Real clinical data must not be uploaded
+raw_data/
+real_data/
+clinical_images/
+clinical_radiographs/
+real_radiographs/
+hospital_data/
+private_data/
+
+# Large local model weights/checkpoints
+*.pth
+*.pt
+*.ckpt
+
+# Local temporary outputs
+tmp/
+temp/
