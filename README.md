@@ -114,19 +114,6 @@ Ground-truth class per image.
 
 These outputs can be used for mAP/AP, confusion-matrix, Wilson confidence-interval, and bootstrap F1 confidence-interval calculations.
 
-Training Configuration
-All three models use a unified training configuration:
-
-Parameter	                    Value
-Optimizer	                    SGD (momentum = 0.9, weight decay = 5e-4)
-Initial learning rate	        0.001
-Learning-rate schedule	      Cosine annealing
-Number of epochs	            150
-Batch size	                  16
-Early stopping	              Terminate when validation loss does not decrease for 15 consecutive epochs
-Data augmentation	            Random horizontal flip (p = 0.5), random rotation (±15°), brightness/contrast adjustment
-Pretraining	                  ImageNet / COCO pretrained weights for transfer learning
-Data augmentation is applied only to the training set, after dataset splitting, to avoid information leakage. The validation and test sets are only resized to 620×480 without augmentation.
 
 Evaluation Metrics
 Model performance is assessed using the following metrics:
