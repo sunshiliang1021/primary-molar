@@ -1,5 +1,34 @@
-torch>=2.0.0
-torchvision
-pandas
-pillow
-numpy
+# ---------- Core deep learning ----------
+torch==1.8.0
+torchvision==0.9.0
+
+# ---------- Data handling ----------
+numpy==1.21.6
+pandas==1.3.5
+Pillow==9.5.0
+
+# ---------- Traditional ML / evaluation ----------
+scikit-learn==1.0.2
+
+# ---------- Visualization ----------
+matplotlib==3.5.3
+seaborn==0.12.2
+
+# ---------- Excel output ----------
+openpyxl==3.1.2
+
+# ---------- Detection-specific dependencies ----------
+# Image augmentation: random horizontal flip (p=0.5),
+# random rotation (+/-15 deg), brightness/contrast adjustment
+albumentations==1.1.0
+opencv-python-headless==4.5.5.64
+
+# FLOPs / model complexity statistics
+thop==0.1.1.post2209072238
+
+# YOLOv7-X official repository dependencies
+# (https://github.com/WongKinYiu/yolov7)
+PyYAML==6.0
+tqdm==4.66.1
+requests==2.31.0
+psutil==5.9.5
